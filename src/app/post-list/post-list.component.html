@@ -6,7 +6,7 @@
        
         <ul class="list-group"  *ngFor="let item of ListPosts; let i = index">
           
-       <app-post-list-item [justOnePost]="item"> 
+       <app-post-list-item [justOnePost]="item"  [index]="i" > 
        
        </app-post-list-item>
       

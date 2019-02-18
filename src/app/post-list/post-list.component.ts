@@ -1,4 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { post } from '../model/post.model';
+import { GestionDePostService } from '../Services/gestion-de-post.service';
+import { _ParseAST } from '@angular/compiler';
 
 
 @Component({
@@ -8,12 +11,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PostListComponent implements OnInit {
  
-  @Input() public  ListPosts:[];
-  constructor() { }
+  public jusOnePost:post;
+  public  ListPosts = this._Ps.ListPosts
+  
+  
 
-  ngOnInit() {
+  constructor(private _Ps:GestionDePostService) { }
+
+  ngOnInit() {   
    
-   
+
   }
 
 }

@@ -3,14 +3,12 @@
 
 
 <li [class]="setMyClasses()">
-
-      
-    <h3>{{justOnePost.title}} {{justOnePost.created_at|date:'short'}} </h3>
+    <h3>{{justOnePost.title}} <h2 class="float-lg-right">{{justOnePost.created_at|date:'short'}}</h2>  </h3>
     <p>{{justOnePost.content}}</p>
     <p>{{justOnePost.loveIts}}</p>
     <button type="button" class="btn btn-success" (click)="loveit()">Love it ! </button>
     <button type="button" class="btn btn-danger" (click)="dontloveit()">Dont Love it ! </button>
-    
+    <button type="button" class="btn btn-danger float-lg-right" (click)="removePost(index)">Supprimer Post ! </button>
 </li>
 <hr>
 

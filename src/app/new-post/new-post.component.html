@@ -1,0 +1,29 @@
+<!-- main app container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+               
+                <form name="form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
+                   
+                  <div class="form-group">
+                        <label for="firstName">Title</label>
+                        <input type="text" class="form-control" name="Title" [(ngModel)]="model.Title" #Title="ngModel"  />
+                       
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="lastName">Content</label>
+                        <input type="text" cols="40" rows="5" class="form-control" name="Content" [(ngModel)]="model.Content" #Content="ngModel"  />
+                       
+                    </div>
+                  
+                    <div class="form-group">
+                        <button class="btn btn-primary">Submission</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
