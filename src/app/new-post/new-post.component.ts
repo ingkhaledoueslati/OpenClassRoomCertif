@@ -17,7 +17,6 @@ export class NewPostComponent implements OnInit {
 
   onSubmit(){
    let  p : post = new post(this.model["Title"],this.model["Content"],0,new Date)
-    //alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.model));
-     this.Ps.addPost(p);
+   this.Ps.addPost(p);
   }
 }
